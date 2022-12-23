@@ -1,0 +1,1091 @@
+/*///new style added*/
+/*@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+h2{
+	font-family: 'Oswald', sans-serif;
+}
+
+p{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 500;
+}
+html{
+	height: 100%;
+	}
+/* //outside */
+
+.readTextT p,.readTextT span{
+	font-family: 'Open Sans', sans-serif !important;
+}
+/*only hover */
+.HoverIcon::after{
+	content: "⌕";
+    color: rgb(255, 255, 255);
+	margin-left: -25px;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+/* Slider Style */
+.david-Slider{
+	height: 467px;
+	background-repeat: no-repeat;
+	background-size: cover;
+  	background-position: unset;
+}
+.d-slider{
+	margin: 0 5%;
+	padding: 3% 0;
+}
+
+.d-slider .slider-title{
+	text-align: center;
+}
+.d-slider .slider-title h2{
+	text-transform: uppercase;
+	font-size: 4em;
+	color: #fff;
+	text-shadow: 2px 2px #343333;
+}
+.d-slider .slider-desc{
+	text-align: center;
+}
+.d-slider .slider-desc p{
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-size: 1.8em;
+	color: #fff;
+	text-shadow: 1px 1px #343333;
+
+}
+.CardsDShow{
+	display: none;
+	position: relative;
+}
+.CardsDShow .DShowCard{
+	height: 275px;
+    width: 190px;
+    border: 2px solid #f3f3f3;
+	background-position: center;
+}
+.CardsDShow .DShowButtons{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 7px;
+    align-items: center;
+	margin-right: 5%;
+	margin-left: 6%;
+
+}
+.CardsDShow .DShowButtons .dShowButtonBack{
+	cursor: pointer;
+    color: #fff;
+    width: 49%;
+    text-align: center;
+    border: 1px solid #fff;
+    font-size: 13px;
+    padding: 5px 0;
+    margin-right: 1%;
+	background-color: #0808086e;
+}
+.CardsDShow .DShowButtons .dShowButtonRead{
+	cursor: pointer;
+    color: #fff;
+    width: 49%;
+    text-align: center;
+    border: 1px solid #fff;
+    font-size: 13px;
+    padding: 5px 0;
+    margin-left: 1%;
+	background-color: #0808086e;
+}
+
+.CardsDShow .DShowTitle{
+	display: none;
+}
+.CardsDShow .DShowTitle p{
+	font-size: 12px;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+	text-shadow: 1px 1px rgb(0, 0, 0);
+}
+.CardsDShow .DShowText{
+	display: none;
+}
+
+/*hover Image */
+.hoverTextShow{
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    background-color: #9c9c9c59;
+    opacity: 1;
+    overflow: hidden;
+    z-index: 999999999;
+	overflow-y: scroll;
+} 
+
+
+.hoverImageShow{
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    background-color: #9c9c9c59;
+    opacity: 1;
+    overflow: hidden;
+    z-index: 999999999;
+}
+
+.hoverImageShow .imagesShow img{
+	display: none;
+	margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*border: 1px solid #fff;*/
+    box-shadow: 0 0 8px rgb(0 0 0 / 30%);
+    z-index: 9999999;
+    box-sizing: border-box;
+	max-height: 80%!important;
+    max-width: 100%!important;
+}
+.closeButton{
+	display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    position: fixed;
+    right: 2%;
+    cursor: pointer;
+    top:15%;
+}
+.closeButton:before{
+	content: "";
+    display: block;
+    height: 20px;
+    width: 1px;
+    background: #000;
+    position: absolute;
+    left: 15px;
+    top: 5px;
+    transform: rotate(45deg);
+}
+.closeButton:after{
+	content: "";
+    display: block;
+    height: 20px;
+    width: 1px;
+    background: #000;
+    position: absolute;
+    left: 15px;
+    top: 5px;
+    transform: rotate(-45deg);
+	
+}
+.arrowSlider .leftArrow{
+	position: absolute;
+	left: 10px;
+	bottom: 140px;
+	color: rgb(61, 61, 61);
+	padding: 5px 10px;
+	cursor: pointer;
+	font-size: 42px;
+}
+.arrowSlider .rightArrow{
+	position: absolute;
+	right: 10px;
+	bottom: 140px;
+	color: rgb(61, 61, 61);
+	padding: 5px 10px;
+	cursor: pointer;
+	font-size: 42px;
+}
+.arrowSlider .leftArrow::after{
+	content: "«";
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 4px;
+    left: 10px;
+    cursor: pointer;
+}
+.arrowSlider .rightArrow::after{
+	content: "»";
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 4px;
+    left: 10px;
+    cursor: pointer;
+}
+
+/*close hover button*/
+
+.flexiable{
+	display: flex;
+	flex-direction: row;
+
+}
+
+.kim-Slider{
+	list-style-type: none;
+	margin-left: 20px;
+	height: 100px;
+    width: 450px;
+    position: relative;
+}
+.kim-Slider .slides .inner{
+	display: inline-block;
+	background-size: cover;
+	position: absolute; 
+	background:linear-gradient(to right, #ee9ca7, #ffdde1);
+	background-repeat:no-repeat;
+	height: 130px;
+	width: 200px;
+	left: 0;
+	bottom: 0;
+	box-shadow: 0px 0px 1px 0px #808080;
+	border-radius:7px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.remove{
+	display: inline-block;
+	background-size: cover;
+	position: absolute; 
+	background:linear-gradient(to right, #ee9ca7, #ffdde1);
+	background-repeat:no-repeat;
+	height: 100px;
+	width: 150px;
+	left: 0;
+	bottom: 0;
+	box-shadow: 0px 0px 1px 0px #808080;
+	border-radius:7px;
+}
+.newCol{
+	width: 70%;
+	margin-top: 12px;
+}
+.newCol-2{
+	width:28%;
+	display: block;
+	float: right;
+	margin-top: 46px;
+}
+.buttons{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+.buttons div{
+	display: inline-block;
+	width: 48%;
+	text-align: center;
+}
+.buttons .heading,.buttons .subhead{
+	height: 50%;
+}
+
+
+.buttons div p{
+	box-sizing: content-box;
+	margin:auto;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #c7c7c7;
+}
+.mrgLft{
+	margin-left: 10px;
+}
+.mrgRth{
+	margin-right: 10px;
+}
+.mrgBtm{
+	margin-bottom: 10px;
+}
+.mrgTp{
+	margin-top: 10px;
+}
+.buttons > div{
+	background-color: #0808086e;
+	cursor: pointer;
+	display: flex;
+	flex-wrap: wrap;
+/*	float: left;*/
+	border: 1px solid #c7c7c7;
+    height: 28px;
+    padding: 3px 0;
+}
+
+.kim-Slider .cntlr .sCardNext{
+    color: rgb(61, 61, 61);;
+    font-size: 45px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+.kim-Slider .cntlr .sCardPrev{
+    color: rgb(61, 61, 61);
+    font-size: 45px;
+    position: absolute;
+    bottom: 0;
+    left: 8px;
+    cursor: pointer;
+	background-color: transparent;
+
+}
+.kim-Slider .cntlr .sCardPrev::after{
+	content: "«";
+    color: rgb(255, 255, 255);
+    position: absolute;
+	top:-2px;
+    left: 0px;
+    cursor: pointer;
+	
+}
+.kim-Slider .cntlr .sCardNext::after{
+	content: "»";
+    color: rgb(255, 255, 255);
+    position: absolute;
+    right: 0px;
+    top: -2px;
+    cursor: pointer;
+}
+
+.buttons .threeCardSpread div{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.buttons .mentalSpread div{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+/*guidbook */
+
+.newCol .guidBook p{
+	color: #fff;
+	margin: 0;
+	text-transform: uppercase;
+}
+.newCol .guidBook{
+	margin-top: 40px;
+}
+.newCol .guidBook .buttonG{
+	cursor: pointer;
+	background-color: #0808086e;
+	display: inline-block;
+	border: 1px solid #c7c7c7;
+	margin-left: 277px;
+	padding: 5px 10px;
+}
+
+
+
+/* // guid book reading  */
+.david-Slider .newCol .readGuidBook {
+	display: none;
+}
+
+.david-Slider .newCol .readGuidBook p, .david-Slider .newCol .readGuidBook span{
+	font-family: 'Open Sans', sans-serif !important;
+}
+
+
+.david-Slider .newCol .readGuidBook p {
+	color: #002000;
+}
+
+.david-Slider .oneSpread{
+	text-align: -webkit-center;
+	display: none;
+}
+
+.david-Slider .oneSpread .oneCardD{
+	height: 200px;
+    width: 130px;
+    border: 2px solid #f3f3f3;
+}
+
+.david-Slider .twoSpread{
+	text-align: -webkit-center;
+	display: none;
+}
+
+.david-Slider .twoSpread .twoCardD{
+	display: inline-block;
+	height: 160px;
+    width: 100px;
+    border: 2px solid #f3f3f3;
+}
+.david-Slider .threeSpread{
+	text-align: -webkit-center;
+	display: none;
+    margin-top: 25px;
+}
+
+.david-Slider .threeSpread .threeCardD{
+	display: inline-block;
+	height: 126px;
+    width: 78px;
+    border: 2px solid #f3f3f3;
+}
+.david-Slider .fourSpread{
+	text-align: -webkit-center;
+	display: none;
+}
+
+.david-Slider .fourSpread .fourCardD{
+	display: inline-block;
+	height: 70px;
+    width: 42px;
+    border: 2px solid #f3f3f3;
+}
+.david-Slider .fiveSpread{
+	text-align: -webkit-center;
+	display: none;
+}
+
+.david-Slider .fiveSpread .fiveCardD{
+	display: inline-block;
+	height: 70px;
+    width: 42px;
+    border: 2px solid #f3f3f3;
+}
+.david-Slider .sixSpread{
+	text-align: -webkit-center;
+	display: none;
+}
+
+.david-Slider .sixSpread .sixCardD{
+	display: inline-block;
+	height: 120px;
+    width: 85px;
+    border: 2px solid #f3f3f3;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.david-Slider{
+		height: 405px;
+	}
+	.newCol{
+		width: 100%;
+		margin-top: 0;
+	}
+	.d-slider .slider-title h2{
+		font-size: 13px;
+		letter-spacing: normal;
+	}
+	.d-slider .slider-desc p{
+		font-size: 9px;
+	}
+	.kim-Slider{
+		width: 223px;
+    	left: calc(50% - 113px );
+		margin-left: 0;
+	}
+	.kim-Slider .slides .inner{
+		width: 100px;
+	    height: 60px;
+	}
+	.kim-Slider .cntlr .sCardPrev , .kim-Slider .cntlr .sCardNext {
+		font-size: 24px;
+	}
+	.newCol .guidBook {
+		margin-top: 17px;
+	}
+	.newCol .guidBook .buttonG {
+		margin-left: 43%;
+		padding: 2px 10px;
+	}
+	.newCol .guidBook .buttonG p{
+		font-size: 7px;
+	}
+	.d-slider .slider-desc p{
+		letter-spacing: 0;
+	}
+	.newCol-2{
+		width: initial !important;
+		margin: 0 auto;
+	}
+	.newCol-2 > div{
+		margin-top: 22%;
+	}
+	.buttons > div {
+		height: 28px !important;
+		padding: 0 !important;
+
+	}
+	.buttons div p{
+		font-size: 7px;
+	}
+	/*// card Sizing*/
+	.david-Slider .twoSpread{
+		align-items: center;
+    	justify-content: center;
+	}
+	.david-Slider .oneSpread .oneCardD {
+	    height: 100px !important;
+	    width: 64px !important;
+	}
+	
+	.david-Slider .twoSpread .twoCardD{
+		height: 100px;
+    	width: 62px;
+	}
+	.david-Slider .threeSpread .threeCardD{
+		height: 100px;
+    	width: 62px;
+	}
+
+	.david-Slider .fourSpread .fourCardD {
+	    height: 40px !important;
+	    width: 24px !important;
+	}
+	.david-Slider .fiveSpread .fiveCardD {
+	    height: 40px !important;
+	    width: 24px !important;
+	}
+	.david-Slider .sixSpread .sixCardD {
+	    display: inline-block;
+	    height: 65px !important;
+    	width: 40px !important;
+	    border: 2px solid #f3f3f3;
+	}
+	.CardsDShow .DShowCard, .CardsDShow .DShowText{
+		height: 134px !important;
+    	width: 90px !important;
+	}
+	.DShowButtons{
+		width: initial !important;
+		margin-right: 5%;
+		margin-left: 5%;
+	}
+	.DShowButtons .dShowButtonBack{
+		font-size: 6px !important;
+		padding: 2px 0 !important;
+	}
+	.DShowButtons .dShowButtonRead{
+		font-size: 6px !important;
+		padding: 1px 0 !important;
+	}
+	.arrowSlider .leftArrow {
+	    left: -21px;
+	    bottom: 60px;
+	     font-size: 20px;
+	}
+	.arrowSlider .rightArrow {
+	    right: -21px;
+	    bottom: 60px;
+	    font-size: 20px;
+	}
+	.CardsDShow{
+		margin-top: 20px;
+	}
+	.CardsDShow .DShowTitle{
+		position: absolute;
+		top: -20px;
+		width: 100%;
+
+	}
+	.CardsDShow .DShowTitle p{
+		font-size: 5px;
+	}
+	.readGuidBook{
+		height:95px;
+		line-height: 8px;
+	}
+	.readGuidBook p,.readGuidBook span{
+		color: black !important;
+		font-size: 7px !important;
+	}
+	.readTextT p,.readTextT span{
+		font-size: 7px !important;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.david-Slider{
+		height: 435px;
+	}
+	.newCol{
+		width: 100%;
+		margin-top: 0;
+	}
+	.d-slider .slider-title h2{
+		font-size: 20px;
+	}
+	.d-slider .slider-desc p{
+		font-size: 10px;
+	}
+	.kim-Slider{
+		width: 223px;
+    	left: calc(50% - 113px );
+		margin-left: 0;
+
+	}
+	.kim-Slider .slides .inner{
+		width: 100px;
+	    height: 60px;
+	}
+	.kim-Slider .cntlr .sCardPrev , .kim-Slider .cntlr .sCardNext {
+		font-size: 24px;
+	}
+	.newCol .guidBook {
+		margin-top: 17px;
+	}
+	.newCol .guidBook .buttonG {
+		margin-left: 46%;
+		padding: 2px 10px;
+	}
+	.newCol .guidBook .buttonG p{
+		font-size: 7px;
+	}
+	.newCol-2{
+		width: initial !important;
+		margin: 0 auto;
+	}
+	.newCol-2 > div{
+		margin-top: 22%;
+	}
+	.buttons > div {
+		height: 28px !important;
+		padding: 0 !important;
+		border: 1px solid #c7c7c7
+
+	}
+	.buttons div p{
+		font-size: 7px;
+	}
+	/*// card Sizing*/
+	.david-Slider .twoSpread{
+		align-items: center;
+    	justify-content: center;
+	}
+	.david-Slider .oneSpread .oneCardD {
+	    height: 100px !important;
+	    width: 64px !important;
+	}
+	
+	.david-Slider .twoSpread .twoCardD{
+		height: 100px;
+    	width: 62px;
+	}
+	.david-Slider .threeSpread .threeCardD{
+		height: 100px;
+    	width: 62px;
+	}
+
+	.david-Slider .fourSpread .fourCardD {
+	    height: 40px !important;
+	    width: 24px !important;
+	}
+	.david-Slider .fiveSpread .fiveCardD {
+	    height: 40px !important;
+	    width: 24px !important;
+	}
+	.david-Slider .sixSpread .sixCardD {
+	    display: inline-block;
+	    height: 65px !important;
+    	width: 40px !important;
+	    border: 2px solid #f3f3f3;
+	}
+	.CardsDShow .DShowCard, .CardsDShow .DShowText{
+		height: 134px !important;
+    	width: 90px !important;
+	}
+	.DShowButtons{
+		width: initial !important;
+	}
+	.DShowButtons .dShowButtonBack{
+		font-size: 7px !important;
+		padding: 2px 0 !important;
+	}
+	.DShowButtons .dShowButtonRead{
+		font-size: 7px !important;
+		padding: 2px 0 !important;
+	}
+	.arrowSlider .leftArrow {
+	    left: -21px;
+	    bottom: 60px;
+	     font-size: 20px;
+	}
+	.arrowSlider .rightArrow {
+	    right: -21px;
+	    bottom: 60px;
+	    font-size: 20px;
+	}
+	.CardsDShow .DShowTitle p{
+		font-size: 7px;
+	}
+	.fourSpread .CardsDShow .DShowTitle p{
+		font-size: 6px !important;
+	}
+	.readGuidBook{
+		height:95px;
+	}
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.david-Slider{
+		height: 390px;
+	}
+	.newCol{
+		width: 60%;
+		margin-top: 50px;
+	}
+	.readGuidBook{
+		height:177px;
+	}
+	.readGuidBook p {
+		color: black !important;
+		font-size: 13px !important;
+	}
+	.readTextT p,.readTextT span{
+		font-size: 13px !important;
+	}
+	.d-slider{
+		padding: 1% 0;
+	}
+	.d-slider .slider-title h2{
+		font-size: 50px;
+	}
+	.d-slider .slider-desc p{
+		font-size: 16px;
+	}
+	.kim-Slider{
+		width: 396px;
+    	left: calc(50% - 198px );
+		margin-left: 0;
+
+	}
+	.kim-Slider .slides .inner{
+		width: 120px;
+	    height: 80px;
+	}
+	.kim-Slider .cntlr .sCardPrev , .kim-Slider .cntlr .sCardNext {
+		font-size: 24px;
+	}
+	.david-Slider .flexiable{
+		margin-top: 40px;
+	}
+
+	.newCol .guidBook {
+		margin-top: 17px;
+	}
+	.newCol .guidBook .buttonG {
+		margin-left: 43%;
+		padding: 5px 10px;
+	}
+	.newCol .guidBook .buttonG p{
+		font-size: 14px;
+	}
+	.newCol-2{
+		width: initial !important;
+		margin: 0 auto;
+	}
+	.newCol-2 > div{
+		margin-top: 0;
+	}
+	.buttons > div {
+		height: 40px !important;
+		padding: 0 !important;
+
+	}
+	.buttons div p{
+		font-size: 10px;
+	}
+	/*// card Sizing*/
+	.david-Slider .twoSpread{
+		align-items: center;
+    	justify-content: center;
+	}
+	.david-Slider .oneSpread .oneCardD {
+	    height: 160px !important;
+   		width: 103px !important;
+	}
+	
+	.david-Slider .twoSpread .twoCardD{
+		height: 140px;
+   		width: 92px;
+	}
+
+	.david-Slider .threeSpread .threeCardD{
+		height: 100px;
+    	width: 62px;
+	}
+
+	.david-Slider .fourSpread .fourCardD {
+	    height: 55px !important;
+    	width: 37px !important;
+	}
+	.david-Slider .fiveSpread .fiveCardD {
+	    height: 55px !important;
+    	width: 37px !important;
+	}
+	.david-Slider .sixSpread .sixCardD {
+	    height: 85px !important;
+    	width: 54px !important;
+	}
+	.CardsDShow .DShowCard, .CardsDShow .DShowText{
+		height: 175px !important;
+    	width: 120px !important;
+	}
+	.DShowButtons{
+		width: initial !important;
+	}
+	.DShowButtons .dShowButtonBack{
+		font-size: 7px !important;
+		padding: 2px 0 !important;
+	}
+	.DShowButtons .dShowButtonRead{
+		font-size: 7px !important;
+		padding: 2px 0 !important;
+	}
+	.arrowSlider .leftArrow {
+	    left: -25px;
+	    bottom: 85px;
+	    font-size: 20px;
+	}
+	.arrowSlider .rightArrow {
+	    right: -25px;
+	    bottom: 85px;
+	    font-size: 20px;
+	}
+	.CardsDShow .DShowTitle{
+		position: absolute;
+		top: -42px;
+		width: 100%;
+	}
+	.CardsDShow .DShowTitle p{
+		font-size: 14px;
+	}
+	.fourSpread .CardsDShow .DShowTitle p{
+		font-size: 8px !important;
+	}
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.david-Slider{
+		height: 550px
+	}
+	.kim-Slider{
+		width: 600px;
+    	left: calc(50% - 300px );
+		margin-left: initial !important;
+		margin-top: 100px;
+
+	}
+	.kim-Slider .slides .inner{
+		height: 130px;
+		width: 200px;
+	}
+	.newCol{
+		width: 70%;
+		margin-top: 27px;
+	}
+	.newCol-2{
+		margin: 64px auto;
+	}
+	.buttons > div {
+	    height: 50px !important;
+	}
+	.readGuidBook {
+	    height: 242px;
+	}
+	.david-Slider .flexiable{
+		margin-top: 40px;
+	}
+	.david-Slider .oneSpread .oneCardD {
+	    height: 200px !important;
+   		width: 130px !important;
+	}
+	
+	.david-Slider .twoSpread .twoCardD{
+		height: 180px;
+    	width: 115px;
+	}
+
+	.david-Slider .threeSpread .threeCardD{
+		height: 126px;
+    	width: 80px;
+	}
+
+	.david-Slider .fourSpread .fourCardD {
+	    height: 60px !important;
+    	width: 40px !important;
+	}
+	.david-Slider .fiveSpread .fiveCardD {
+	    height: 60px !important;
+    	width: 40px !important;
+	}
+	.david-Slider .sixSpread .sixCardD {
+	    height: 85px !important;
+    	width: 54px !important;
+	}
+	.CardsDShow .DShowCard, .CardsDShow .DShowText{
+		height: 236px !important;
+    	width: 165px !important;
+	}
+	.d-slider .slider-title h2 {
+	    font-size: 36px;
+	}
+	.d-slider .slider-desc p{
+		font-size: 24px;
+	}
+	.david-Slider .newCol .readGuidBook p {
+		font-size: 14px;
+	}
+	.readTextT p,.readTextT span{
+		font-size: 14px !important;
+	}
+	.newCol .guidBook .buttonG{
+		margin-left: 47%;
+	}
+	.CardsDShow .DShowTitle p{
+		font-size: 14px;
+	}
+	.fourSpread .CardsDShow .DShowTitle p{
+		font-size: 9px !important;
+	}
+
+	
+}
+
+@media only screen and (min-width: 1401px){
+	.david-Slider{
+		height: 800px;
+		padding: 25px 0;
+	}
+	.david-Slider .flexiable{
+		margin-top: 6em;
+	}
+	.newCol-2{
+		margin: auto;
+	}
+	.kim-Slider{
+		width: 830px;
+    	left: calc(50% - 415px );
+		margin-left: initial !important;
+		margin-top: 7em;
+
+	}
+
+	.kim-Slider .slides .inner{
+		height: 180px;
+		width: 280px;
+	}
+	.DShowButtons .dShowButtonRead,.CardsDShow .DShowButtons .dShowButtonBack{
+		font-size: 16px !important;
+	}
+
+
+	.CardsDShow .DShowCard{
+		height: 310px !important;
+    	width: 220px !important;
+	}
+	.CardsDShow .DShowText{
+		height: 310px !important;
+    	width: 220px !important;
+	}
+	.kim-Slider .cntlr .sCardPrev, .kim-Slider .cntlr .sCardNext{
+		font-size: 60px;
+	}
+	.arrowSlider .leftArrow{
+		left: -52px;
+	    bottom: 114px;
+	    font-size: 60px;
+	}
+	.arrowSlider .rightArrow{
+		right: -48px;
+	    bottom: 114px;
+	    font-size: 60px;
+	}
+	
+	.newCol .guidBook {
+		margin-top: 36px;
+	}
+	.newCol .guidBook .buttonG p{
+		font-size: 22px;
+	}
+	.d-slider{
+		padding: 1% 0;
+	}
+	.d-slider .slider-title h2{
+		font-size: 70px;
+	}
+	.d-slider .slider-desc p{
+		font-size: 33px;
+	}
+	.buttons div p{
+		font-size: 16px;
+	}
+	.david-Slider .oneSpread .oneCardD {
+	    height: 280px !important;
+   		width: 180px !important;
+	}
+	
+	.david-Slider .twoSpread .twoCardD{
+		height: 255px;
+   		width: 165px;
+	}
+
+	.david-Slider .threeSpread .threeCardD{
+		height: 184px;
+    	width: 114px;
+	}
+
+	.david-Slider .fourSpread .fourCardD {
+	    height: 94px !important;
+    	width: 62px !important;
+	}
+	.david-Slider .fiveSpread .fiveCardD {
+	    height: 94px !important;
+    	width: 62px !important;
+	}
+	.david-Slider .sixSpread .sixCardD {
+	    height: 160px !important;
+    	width: 110px !important
+	}
+	.CardsDShow .DShowTitle{
+		position: absolute;
+		top: -85px;
+		width: 100%;
+
+	}
+	.CardsDShow .DShowTitle p{
+		font-size: 17px;
+	}
+	.fourSpread .CardsDShow .DShowTitle p{
+		font-size: 16px !important;
+	}
+	.readGuidBook{
+		height: 354px;
+	}
+	.david-Slider .readGuidBook p,.david-Slider .readGuidBook span{
+		font-size: 22px !important;
+	}
+	.readTextT p,.readTextT span{
+		font-size: 22px !important;
+	}
+}
+

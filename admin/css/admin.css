@@ -1,0 +1,307 @@
+.David-Slider-Header{
+	display: flex;
+	height: 80px;
+	background-color: #23282d;
+	margin-top: 20px;
+	padding-left: 20px;
+	border-bottom: 2px solid blue;
+	align-items: center;
+
+}
+.David-Slider-Header .homeBack span{
+	font-size: 32px;
+	color:#fff;
+	cursor:pointer;
+}
+
+
+.David-Slider-Header .titleSlider,.David-Slider-Header .sliderNam{
+	display: inline-block;
+}
+.David-Slider-Header .sliderNam{
+	padding-left: 20px;
+}
+.David-Slider-Header .titleSlider h2, .David-Slider-Header .sliderNam h2{
+	color: #fff;
+	font-family:sans-serif;
+}
+.sliderCircus{
+    display: flex;
+}
+.circusMenu{
+    width: 60%;
+}
+/* .circusMenu .circusItems .circusNames h2{
+
+} */
+.circusMenu .addNewButtonC{
+    text-align:start;
+}
+.sliderCircus .circusMenu .circusItems .circusNames{
+    background-color: #ccc;
+    display: flex;
+    flex: 1;
+    margin: 5px 0;
+    padding: 0 15px;
+    border-radius: 5px;
+	/* cursor:pointer; */
+}
+.sliderCircus .circusMenu .circusItems .circusNames .btnNames{
+    flex:9;
+	margin-right: 10px;
+	cursor: pointer;
+	padding: 8px 0;
+}
+.sliderCircus .circusMenu .circusItems .circusNames .btnNames h2{
+	margin:0;
+}
+.sliderCircus .circusMenu .circusItems .circusNames .btnNames p{
+	margin:0 10px;
+}
+.sliderCircus .circusMenu .circusItems .circusNames .optionDelete{
+    flex:1;
+    font-size: 25px;
+    color: rgb(255, 0 ,0);
+	align-self: center;
+	align-items: center;
+	text-align: -webkit-center;
+	cursor: pointer;
+	width: 100%;
+	line-height: normal;
+}
+/* //start */
+.circusMenu .addNewButtonC button{
+    background-color: rgb(0, 54, 0);
+    color: rgb(255, 254, 250);
+    cursor: pointer;
+    border: none;
+    padding:5px 10px;
+    border-radius: 5px;
+}
+.circusBody{
+    width: 70%;
+    display: block;
+}
+.circusAddingItems .circusItem{
+    padding: 20px 0 0 20px;
+}
+.circusAddingItems .label{
+    display: block;
+    padding:5px 5px;
+    margin-bottom: 5px;
+}
+.circusAddingItems .input{
+    display: block;
+}
+.submit_circus{
+    padding: 20px 0 0 20px;
+}
+.submit_circus .submit{
+    cursor: pointer;
+    border-radius: 5px;
+    padding:5px 10px;
+    background-color: rgb(73, 13, 3);
+    color: rgb(255, 255, 255);
+}
+
+.sliderCircus{
+	display: none;
+}
+.sliderCircus .addNewButtonC{
+	margin-top: 20px;
+}
+
+.sliderCircus .circusBody{
+	display: none;
+}
+
+
+/* //end */
+.David-Slider-Cards{
+	display: none;
+	/* display: flex; */
+	flex-wrap: wrap;
+	border-left: 1px solid;
+	border-Right: 1px solid;
+	border-bottom: 1px solid;
+	border-color: #ccc;
+}
+
+.David-Slider-Cards .Card-Sidebar{
+	flex: 20%;
+}
+.David-Slider-Cards .Card-Main{
+	flex: 80%;
+}
+.David-Slider-Cards .Card-Main .Main-Cards-Form {
+	padding-left: 10px;
+	border-top: 30px solid;
+	border-left: 2px solid;
+	border-right: 2px solid;
+	border-bottom: 2px solid;
+	border-color: #e2e2e2;
+}
+.David-Slider-Cards .Card-Main .Main-Cards-Form h2{
+	text-align: center;
+	text-transform: capitalize;
+}
+.David-Slider-Cards .Card-Sidebar .button_Sidebar_Option{
+	padding: 5px 5px 5px 10px;
+	background-color: #bdbdbd38;
+	border: 1px solid #bfbfbf;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+	
+.David-Slider-Cards .Card-Sidebar .button_Sidebar{
+	padding: 5px 5px 5px 10px;
+	background-color: #bdbdbd38;
+	border: 1px solid #bfbfbf;
+	font-weight: bold;
+	cursor: pointer;
+}
+.David-Slider-Cards .Card-Sidebar .button_Sidebar:nth-child(1){
+	background-color: #fff;
+}
+
+/* Manual Design for new */
+
+
+.David-Slider-Cards .Card-Main .headerTitle {
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	margin: 10px 0;
+}
+
+.David-Slider-Cards .Card-Main form div div{
+	display: inline-block;
+}
+.David-Slider-Cards .Card-Main form div .btl{
+	width: 30%;
+	vertical-align: top;
+}
+.David-Slider-Cards .Card-Main form div .bbl img{
+	height: 270px;
+	width: 220px;
+}
+.David-Slider-Cards .Card-Main form div  .bbl .Buttons{
+	display: block;
+}
+.David-Slider-Cards .Card-Main form .main-cards-body-image ,.David-Slider-Cards .Card-Main form .main-cards-body-switch ,.David-Slider-Cards .Card-Main form .main-cards-body-description {
+	padding: 15px 0;
+}
+
+/* sidebar option */
+.David-Slider-Cards .Card-Main .SidebarMainForm{
+	padding: 0 10px;
+}
+.David-Slider-Cards .Card-Main form .titleSlider,
+.David-Slider-Cards .Card-Main form .SubTitleSlider,
+.David-Slider-Cards .Card-Main form .backgroudImgSlider,
+.David-Slider-Cards .Card-Main form .cardImgSlider,
+.David-Slider-Cards .Card-Main form .submitSliderBtn
+{
+	padding: 15px 0;
+}
+
+
+.David-Slider-Cards .Card-Main form .main-cards-submit{
+	margin-bottom:15px ;
+}
+.David-Slider-Cards .Card-Main form .main-cards-submit button,.David-Slider-Cards .Card-Main form .submitSliderBtn button{
+	background-color: rgb(221, 133, 1);
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+	padding: 5px 5px;
+	cursor: pointer;
+}
+
+
+/* need remove this design */
+.David-Slider-Cards .Card-Main .sliderActionForm{
+	display: block;
+}
+.David-Slider-Cards .Card-Main .oneActionForm{
+	display: none;
+}
+.David-Slider-Cards .Card-Main .twoActionForm{
+	display: none;
+}
+.David-Slider-Cards .Card-Main .threeActionForm{
+	display: none;
+}
+.David-Slider-Cards .Card-Main .fourActionForm{
+	display: none;
+}
+.David-Slider-Cards .Card-Main .fiveActionForm{
+	display: none;
+}
+.David-Slider-Cards .Card-Main .sixActionForm{
+	display: none;
+}
+
+.David-Slider-Cards .Card-Main .sevenActionForm{
+	display: none;
+}
+
+.David-Slider-Cards .Card-Main .eightActionForm{
+	display: none;
+}
+.David-Slider-Cards .Card-Main .nineActionForm{
+	display: none;
+}
+.David-Slider-Cards .Card-Main .tenActionForm{
+	display: none;
+}
+.David-Slider-Cards .Card-Main .elevenActionForm{
+	display: none;
+}
+.David-Slider-Cards .Card-Main .twelveActionForm{
+	display: none;
+}
+.David-Slider-Cards .Card-Main .thirteenActionForm{
+	display: none;
+}
+.David-Slider-Cards .Card-Main .fourteenActionForm{
+	display: none;
+}
+.David-Slider-Cards .Card-Main .fifteenActionForm{
+	display: none;
+}
+.David-Slider-Cards .Card-Main .sixteenActionForm{
+	display: none;
+}
+.David-Slider-Cards .Card-Main .seventeenActionForm{
+	display: none;
+}
+.David-Slider-Cards .Card-Main .eighteenActionForm{display: none;}
+.David-Slider-Cards .Card-Main .nineteenActionForm{display: none;}
+.David-Slider-Cards .Card-Main .twentyActionForm{display: none;}
+.David-Slider-Cards .Card-Main .twentyOneActionForm{display: none;}
+.David-Slider-Cards .Card-Main .twentyTwoActionForm{display: none;}
+.David-Slider-Cards .Card-Main .twentyThreeActionForm{display: none;}
+.David-Slider-Cards .Card-Main .twentyfoursActionForm{display: none;}
+.David-Slider-Cards .Card-Main .twentyFivesActionForm{display: none;}
+.David-Slider-Cards .Card-Main .twentySixActionForm{display: none;}
+.David-Slider-Cards .Card-Main .twentySevenActionForm{display: none;}
+.David-Slider-Cards .Card-Main .twentyEightActionForm{display: none;}
+.David-Slider-Cards .Card-Main .twentyNineActionForm{display: none;}
+.David-Slider-Cards .Card-Main .thirtyActionForm{display: none;}
+.David-Slider-Cards .Card-Main .thirtyOneActionForm{display: none;}
+.David-Slider-Cards .Card-Main .thirtyTwoActionForm{display: none;}
+.David-Slider-Cards .Card-Main .thirtyThreeActionForm{display: none;}
+.David-Slider-Cards .Card-Main .thirtyFourActionForm{display: none;}
+.David-Slider-Cards .Card-Main .thirtyFivesActionForm{display: none;}
+.David-Slider-Cards .Card-Main .thirtySixActionForm{display: none;}
+.David-Slider-Cards .Card-Main .thirtySevenActionForm{display: none;}
+.David-Slider-Cards .Card-Main .thirtyEightActionForm{display: none;}
+.David-Slider-Cards .Card-Main .thirtyNineActionForm{display: none;}
+.David-Slider-Cards .Card-Main .fortyActionForm{display: none;}
+.David-Slider-Cards .Card-Main .fortyOneActionForm{display: none;}
+.David-Slider-Cards .Card-Main .fortyTwoActionForm{display: none;}
+.David-Slider-Cards .Card-Main .fortyThreeActionForm{display: none;}
+.David-Slider-Cards .Card-Main .fortyFourActionForm{display: none;}
